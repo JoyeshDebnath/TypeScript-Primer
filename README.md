@@ -26,3 +26,21 @@ let pt: { x: number; y: number } = {
   x: 10,
   y: 20
 };
+In programming, a null value indicates an absence of value. A null variable doesn’t point to any object. Hence you cannot access any properties on the variable or call a method on it.
+
+In TypeScript, the null value is indicated by the ‘null’ keyword. You can check if a value is null as follows:
+
+function greet(name: string | null) {
+if (name === null) {
+  console.log("Name is not provided");
+} else {
+  console.log("Good morning, " + name.toUpperCase());
+}
+}
+
+var foo = null;
+greet(foo); // "Name is not provided"
+
+foo = "Anders";
+greet(foo);  // "Good morning, ANDERS"
+
