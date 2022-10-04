@@ -43,4 +43,22 @@ greet(foo); // "Name is not provided"
 
 foo = "Anders";
 greet(foo);  // "Good morning, ANDERS"
+Enums allow us to create named constants. It is a simple way to give more friendly names to numeric constant values. An enum is defined by the keyword enum, followed by its name and the members.
 
+Consider the following example that defines an enum Team with four values in it.
+
+enum Team {
+Alpha,
+Beta,
+Gamma,
+Delta
+}
+let t: Team = Team.Delta;
+By default, the enums start the numbering at 0. You can override the default numbering by explicitly assigning the values to its members.
+
+TypeScript also lets you create enums with string values as follows:
+
+enum Author {
+  Anders = "Anders",
+  Hejlsberg = "Hejlsberg"
+};
