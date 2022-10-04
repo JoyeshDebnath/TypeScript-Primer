@@ -20,3 +20,11 @@ function add(a, b) {
 
 TypeScript adds optional static typing and language features such as classes and modules. It’s important to know that all these advanced features add zero cost to JavaScript. A typeScript is purely a compile-time tool. Once you compile, you are left with plain, idiomatic JavaScript. TypeScript is a language for application scale JavaScript development.
 
+Objects are dictionary-like collections of keys and values. The keys have to be unique. They are similar to arrays and are also sometimes called associative arrays. However, an array uses numbers to index the values, whereas an object allows you to use any other type as the key.
+
+In TypeScript, an Object type refers to any value with properties. It can be defined by simply listing the properties and their types. For example,
+
+let pt: { x: number; y: number } = {
+  x: 10,
+  y: 20
+};
