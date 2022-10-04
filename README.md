@@ -20,3 +20,14 @@ function add(a, b) {
 
 TypeScript adds optional static typing and language features such as classes and modules. It’s important to know that all these advanced features add zero cost to JavaScript. A typeScript is purely a compile-time tool. Once you compile, you are left with plain, idiomatic JavaScript. TypeScript is a language for application scale JavaScript development.
 
+Functions are blocks of code to perform a specific code. Functions can optionally take one or more arguments, process them, and optionally return a value.
+
+Here’s the TypeScript syntax to create and call a function.
+
+function greet(name: string): string {
+  return `Hello, ${name}`;
+}
+
+let greeting = greet("Anders");
+console.log(greeting);  // "Hello, Anders"
+8. How to create objects in TypeScript?
